@@ -7,10 +7,21 @@ function sum(p1,p2){
 //// code here can NOT use total
 
 let x = sum(1,2); //Function is called
-console.log(x); // same console.log(sum(1,2));
+//console.log(x); // same console.log(sum(1,2));
 
 /*
 // Local Variables
  Variables declared within a JavaScript function, become LOCAL to the function.
 
  Local variables can only be accessed from within the function.*/
+
+
+ function record(n,r){
+     let name=n;
+     let roll=r;
+     console.log(name,roll);
+     
+ }
+
+ let f = record("hamza",62);
+ 
