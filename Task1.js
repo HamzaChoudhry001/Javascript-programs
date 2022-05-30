@@ -15,9 +15,7 @@ const obj={
     // b)write a program which increment the 10 in the age 
     var umer = obj.age+=10;
     console.log("age: ",umer)
-    // c)write a program which prints the average of the marks=45,50,23,54,54,54 in a particular function in object obj 
-
-    // and then prints its result
+    // c)write a program which prints the average of the marks=45,50,23,54,54,54 in a particular function in object obj and then prints its result
     console.log("Avg: ",obj.marks());
     
     // Q2:-write a function which perfroms the +,-,%,* in that function on two numbers
