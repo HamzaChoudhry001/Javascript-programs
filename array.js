@@ -32,11 +32,20 @@
 //  const person = {firstName:"John", lastName:"Doe", age:46};
 //  console.log(person.firstName);
 
-var tot = 0;
-var num = [10 , 20 , 30 , 40 , 50];
-for(var i=0; i<num.length; i++){
+// var tot = 0;
+// var num = [10 , 20 , 30 , 40 , 50];
+// for(var i=0; i<num.length; i++){
    
-    tot = tot + num[i];
-    console.log(tot);
-}
-console.log("total:" , tot);
+//     tot = tot + num[i];
+//     console.log(tot);
+// }
+// console.log("total:" , tot);
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+readline.question('Who are you?', name => {
+  console.log(`Hey there ${name}!`);
+  readline.close();
+});

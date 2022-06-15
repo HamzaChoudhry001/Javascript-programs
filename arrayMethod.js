@@ -13,7 +13,8 @@ const string = array.toString();
 
 // Popping and Pushing
 //push at last 
-//console.log(array.push("D"));
+// let l = array.push("D");
+// console.log(l);
 //console.log(array);//now 'A', 'B', 'C', 'D'
 //pop at last
 //console.log(array.pop());
@@ -34,12 +35,27 @@ const string = array.toString();
 
 // Merging (Concatenating) Arrays
 // The concat() method creates a new array by merging (concatenating) existing arrays:
- const array2 = [1,2,3];
- const merge = array.concat(array2);
- console.log(merge);//'A', 'B', 'C', 1, 2, 3
+//  const array2 = [1,2,3];
+//  const merge = array.concat(array2);
+//  console.log(merge);//'A', 'B', 'C', 1, 2, 3
 
 //slice() The slice() method creates a new array. does not remove elemnt
 //When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument
 //merge:  'A', 'B', 'C', 1, 2, 3
-console.log(merge.slice(1,4)); //4index value will not included
+// console.log(merge.slice(1,4)); //4index value will not included
 
+// Splicing  add value
+//const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(1,2,"Leon")//[ 'Banana', 'Leon', 'Mango' ] //add at index 1 and at index 2remove
+// console.log(fruits);
+
+//Slice //piece remove thwn insert to other aeeay
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+//const citrus = fruits.slice(2);
+console.log(fruits.slice(1,3));// [ 'Orange', 'Lemon' ] 3 not include 
+console.log(fruits.slice(3)); //[ 'Apple', 'Mango' ]-->from 3index to till end slice array
+console.log("old: "+fruits);
+
+const f = ["Banana", "Orange", "Apple", "Mango"];
+f[5] = "Kiwi";//[ 'Banana', 'Orange', 'Apple', 'Mango', <1 empty item>, 'Kiwi' ]
+console.log(f);
